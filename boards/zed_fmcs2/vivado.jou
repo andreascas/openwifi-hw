@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu May 11 16:41:14 2023
+# Process ID: 41541
+# Current directory: /home/andreaswork/openwifi/newestversion/openwifi-hw/boards/zed_fmcs2
+# Command line: vivado -source ./ip_repo_gen.tcl
+# Log file: /home/andreaswork/openwifi/newestversion/openwifi-hw/boards/zed_fmcs2/vivado.log
+# Journal file: /home/andreaswork/openwifi/newestversion/openwifi-hw/boards/zed_fmcs2/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ./ip_repo_gen.tcl
+source ./ip_repo_gen.tcl
+source ./ip_repo_gen.tcl
+ls
+dir
+pwd
+source ./openwifi.tcl
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file /home/andreaswork/openwifi/newestversion/openwifi-hw/boards/zed_fmcs2/openwifi_zed_fmcs2/system_top.xsa
